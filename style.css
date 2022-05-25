@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main div {
+    margin-bottom: 20px;
+    padding: 30px;
+    font-size: x-large;
+}
+
+h1, h3 {
+    margin: 15px 0 20px 0;
+}
+
+#container-2 figure {
+    display: none;
+}
+
+#container-2 img {
+    border-radius: 8px;
+    background-color: rgb(69, 21, 21);
+}
+
+div p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+button {
+    margin: 20px 10px 0 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: medium;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(44, 44, 44);
+}

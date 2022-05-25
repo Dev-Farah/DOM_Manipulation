@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main">
+        <div id="container-1">
+            <h1>DOM Manipulation</h1>
+            <h3>Let's do some changes!</h3>
+            <button onclick="textColor()">Text Color</button>
+            <button onclick="bgColors()">Background Color</button>
+        </div>
+
+        <hr />
+
+        <div id="container-2">
+            <figure id="figure">
+                <img src="./images/Waitomo-Caves.png" width="100%" alt="New Zealand's tourist attraction">
+                <br />
+                <figcaption>Waitomo Glowworm Caves, New Zealand</figcaption>
+            </figure>
+            <button onclick="imgHandler('show')">Show Image</button>
+            <button onclick="imgHandler('large')">Large Image</button>
+            <button onclick="imgHandler('small')">Small Image</button>
+            <button onclick="imgHandler('hide')">Hide Image</button>
+        </div>
+
+        <hr />
+
+        <div id="container-3">
+            <h3>Turn the Bulb On/Off</h3>
+            <img src="./images/Off-Bulb.png" onmouseover="imgChange('on', this)" onmouseout="imgChange('off', this)"
+                width="10%" alt="Bulb image">
+        </div>
+
+        <hr />
+
+        <div id="container-4">
+            <h3>Change the color of each paragraph</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <button onclick="paraColor()">Text Color</button>
+        </div>
+
+        <hr />
+
+        <div id="container-5">
+            <h3>Change the color of first and last paragraph</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus explicabo, ipsum
+                omnis quasi velit debitis neque necessitatibus, nam veritatis atque nihil labore in
+                esse possimus quos ab ad vero amet!
+            </p>
+            <button onclick="firstLastChild()">Text Color</button>
+        </div>
+
+    </section>
+</body>
+<script src="./app.js"></script>
+
+</html>
